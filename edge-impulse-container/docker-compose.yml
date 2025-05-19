@@ -1,0 +1,10 @@
+services:
+  edge-impulse:
+    build: .
+    container_name: edge-impulse
+    privileged: true
+    volumes:
+      - ./data:/data
+    tty: true
+
+# executar dentro do container: edge-impulse-linux --disable-camera
